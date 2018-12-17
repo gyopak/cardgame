@@ -1,5 +1,7 @@
 import React from 'react';
 import Card from './Card'
+import './Game.css';
+import { newGame } from '../actions/';
 
 const gridStyle = size => ({
   display: 'grid',
@@ -25,17 +27,23 @@ const gameEndCheck = (cards, dispatch, currentTries) => {
   }
 }
 
+const restart = (dispatch, size) => () => {
+  dispatch(newGame(size));
+}
+
 const Game = ({ cards, currentTries, best, dispatch }) => {
   gameEndCheck(cards, dispatch, currentTries);
   return (
     <div className="Game">
-      <div>
+      <div className="scoreContainer">
         <p>{`Current tries: ${currentTries}`}</p>
         <p>{`Best: ${best}`}</p>
+        <button onClick={restart(dispatch, cards.length / 2)}>RESTART</button>
       </div>
       <div style={gridStyle(cards.length)}>
-      {getCards(cards)}
+        {getCards(cards)}
       </div>
+      <div className="placeholder"></div>
     </div>
   );
 }

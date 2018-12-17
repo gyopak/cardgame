@@ -23,5 +23,6 @@
 p {
   display: inline;
   color: gray;
+  font-size: 1rem;
   margin-right: 0.5rem;
 }

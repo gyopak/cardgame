@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { newGame } from './actions'
+import { newGame } from '../actions/';
 import './GameController.css';
 
 const getSizes = sizes => sizes
