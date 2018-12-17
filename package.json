@@ -11,11 +11,15 @@
     "redux": "^4.0.1",
     "redux-persist": "^5.10.0"
   },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "homepage": "http://gy0p4k.github.io/cardgame",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
