@@ -5,6 +5,4 @@ const mapStateToProps = state => ({
   cards: state.gameReducer.cards,
 });
 
-export default connect(
-  mapStateToProps,
-)(Game);
+export default connect(mapStateToProps)(Game);

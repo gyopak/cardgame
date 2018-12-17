@@ -3,11 +3,9 @@ import { connect } from 'react-redux';
 import { newGame } from './actions'
 import './GameController.css';
 
-const sizes = [3,4,5,6,7,8,9,10]
-
-const getSizes = () => sizes
+const getSizes = sizes => sizes
   .map(e => (
-    <option value={e}>{e}</option>
+    <option key={e} value={e}>{e}</option>
   ));
 
 const startNewGame = (e, dispatch) => {
@@ -16,11 +14,11 @@ const startNewGame = (e, dispatch) => {
   dispatch(newGame(size));
 }
 
-const GameController = ({ dispatch }) => (
+const GameController = ({ sizeOptions, dispatch }) => (
   <form className="GameController" onSubmit={e => startNewGame(e, dispatch)}>
     <p>Deck size:</p>
     <select className="SizePicker">
-      {getSizes()}
+      {getSizes(sizeOptions)}
     </select>
     <button type="submit" className="NewGame">
       START NEW GAME
@@ -28,4 +26,11 @@ const GameController = ({ dispatch }) => (
   </form>
 );
 
-export default connect()(GameController);
+const mapStateToProps = state => {
+  console.log("mapstate", state);
+  return {
+    sizeOptions: state.gameReducer.sizeOptions,
+  }
+};
+
+export default connect(mapStateToProps)(GameController);
