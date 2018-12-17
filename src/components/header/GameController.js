@@ -26,11 +26,8 @@ const GameController = ({ sizeOptions, dispatch }) => (
   </form>
 );
 
-const mapStateToProps = state => {
-  console.log("mapstate", state);
-  return {
-    sizeOptions: state.gameReducer.sizeOptions,
-  }
-};
+const mapStateToProps = state => ({
+  sizeOptions: state.gameReducer.sizeOptions,
+});
 
 export default connect(mapStateToProps)(GameController);

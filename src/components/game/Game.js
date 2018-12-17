@@ -18,10 +18,26 @@ const getCards = cards => cards
   />
 );
 
-const Game = ({ cards }) => (
-  <div style={gridStyle(cards.length)}>
-    {getCards(cards)}
-  </div>
-);
+const gameEndCheck = (cards, dispatch, currentTries) => {
+  const isAnyCardAvailable = cards.some(card => card.active);
+  if (cards.length && !isAnyCardAvailable) {
+    dispatch({ type: "GAME_END", score: currentTries })
+  }
+}
+
+const Game = ({ cards, currentTries, best, dispatch }) => {
+  gameEndCheck(cards, dispatch, currentTries);
+  return (
+    <div className="Game">
+      <div>
+        <p>{`Current tries: ${currentTries}`}</p>
+        <p>{`Best: ${best}`}</p>
+      </div>
+      <div style={gridStyle(cards.length)}>
+      {getCards(cards)}
+      </div>
+    </div>
+  );
+}
 
 export default Game;
