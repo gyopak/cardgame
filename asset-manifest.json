@@ -1,0 +1,23 @@
+{
+  "main.css": "/cardgame/static/css/main.96a39466.chunk.css",
+  "main.js": "/cardgame/static/js/main.939001b8.chunk.js",
+  "main.js.map": "/cardgame/static/js/main.939001b8.chunk.js.map",
+  "static/js/1.feb4383a.chunk.js": "/cardgame/static/js/1.feb4383a.chunk.js",
+  "static/js/1.feb4383a.chunk.js.map": "/cardgame/static/js/1.feb4383a.chunk.js.map",
+  "runtime~main.js": "/cardgame/static/js/runtime~main.4de7129a.js",
+  "runtime~main.js.map": "/cardgame/static/js/runtime~main.4de7129a.js.map",
+  "static/media/logo.svg": "/cardgame/static/media/logo.0a42ff00.svg",
+  "static/media/angular.png": "/cardgame/static/media/angular.ef1abca2.png",
+  "static/media/d3.png": "/cardgame/static/media/d3.02fe5fca.png",
+  "static/media/jenkins.png": "/cardgame/static/media/jenkins.61e03d19.png",
+  "static/media/postcss.png": "/cardgame/static/media/postcss.2348d8db.png",
+  "static/media/react.png": "/cardgame/static/media/react.10c64990.png",
+  "static/media/redux.png": "/cardgame/static/media/redux.a65a699d.png",
+  "static/media/sass.png": "/cardgame/static/media/sass.56cd4b21.png",
+  "static/media/supercharge.png": "/cardgame/static/media/supercharge.3079ecbf.png",
+  "static/media/ts.png": "/cardgame/static/media/ts.c237b6ce.png",
+  "static/css/main.96a39466.chunk.css.map": "/cardgame/static/css/main.96a39466.chunk.css.map",
+  "index.html": "/cardgame/index.html",
+  "precache-manifest.10f570d40f417f9c04b2755f4bd8ea11.js": "/cardgame/precache-manifest.10f570d40f417f9c04b2755f4bd8ea11.js",
+  "service-worker.js": "/cardgame/service-worker.js"
+}
