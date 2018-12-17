@@ -2,14 +2,20 @@ import React from 'react';
 import './Game.css';
 import Card from './Card'
 
-const getCards = size => Array(size).fill(1)
+const getCards = cards => cards
   .map(e => 
-  <Card />
+  <Card 
+    type={e.type}
+    key={`${e.type}_${e.id}`}
+    id={e.id}
+    flipped={e.flipped}
+    active={e.active}
+  />
 );
 
-const Game = ({ size }) => (
+const Game = ({ cards }) => (
   <div className="Game">
-    {getCards(size)}
+    {getCards(cards)}
   </div>
 );
 
