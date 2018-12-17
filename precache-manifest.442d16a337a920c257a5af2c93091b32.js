@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/cardgame/static/media/ts.c237b6ce.png"
   },
   {
-    "revision": "e4c70b27c954179225c4a4baab6bd224",
+    "revision": "fb177347b3ce2958ca05d9ed6c963aa9",
     "url": "/cardgame/index.html"
   }
 ];
