@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { newGame } from './actions'
 import './GameController.css';
 
 const sizes = [3,4,5,6,7,8,9,10]
@@ -8,16 +10,22 @@ const getSizes = () => sizes
     <option value={e}>{e}</option>
   ));
 
-const GameController = () => (
-  <div className="GameController">
+const startNewGame = (e, dispatch) => {
+  e.preventDefault();
+  const size = parseInt(e.target.querySelector('.SizePicker').value);
+  dispatch(newGame(size));
+}
+
+const GameController = ({ dispatch }) => (
+  <form className="GameController" onSubmit={e => startNewGame(e, dispatch)}>
     <p>Deck size:</p>
     <select className="SizePicker">
       {getSizes()}
     </select>
-    <button className="NewGame">
+    <button type="submit" className="NewGame">
       START NEW GAME
     </button>
-  </div>
+  </form>
 );
 
-export default GameController;
+export default connect()(GameController);
