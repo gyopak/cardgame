@@ -17,10 +17,22 @@ const cardFlip = (type, id) => ({
   id,
 });
 
+const ping = () => ({
+  type: 'AFTER_FLIP_PING',
+});
+
+
+const handleCardFlip = (dispatch, type, id) => {
+  dispatch(cardFlip(type, id));
+  setTimeout(() => {
+    dispatch(ping());
+  }, 500);
+}
+
 const Card = ({ type, id, flipped, active = true, dispatch}) => {
   const logo = require('../../assets/cards/' + type + '.png');
   return (
-    <div className={active ? "active" : "hidden"} style={getStyle()} onClick={() => dispatch(cardFlip(type, id))}>
+    <div className={active ? "active" : "hidden"} style={getStyle()} onClick={() => handleCardFlip(dispatch, type, id)}>
       <ReactCardFlip isFlipped={flipped}>
         <div style={getStyle("white")} key="front">
         </div>

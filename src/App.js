@@ -6,10 +6,10 @@ import Game from './components/game/';
 
 const App = () => (
   <div className="App">
-  <Header />
-  <div className="GameContainer">
-    <Game />
-  </div>
+    <Header />
+    <div className="GameContainer">
+      <Game />
+    </div>
 </div>
 );
 

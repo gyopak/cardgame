@@ -10,7 +10,6 @@
 }
 
 .hidden {
-  opacity: 0.2;
-  background-color: rgb(231, 231, 231); 
+  opacity: 0.1;
   pointer-events: none;
 }

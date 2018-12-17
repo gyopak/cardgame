@@ -1,6 +1,11 @@
 import React from 'react';
-import './Game.css';
 import Card from './Card'
+
+const gridStyle = size => ({
+  display: 'grid',
+  gridGap: '1rem',
+  gridTemplateColumns: `repeat(${Math.ceil(Math.sqrt(size))}, auto)`
+});
 
 const getCards = cards => cards
   .map(e => 
@@ -14,7 +19,7 @@ const getCards = cards => cards
 );
 
 const Game = ({ cards }) => (
-  <div className="Game">
+  <div style={gridStyle(cards.length)}>
     {getCards(cards)}
   </div>
 );
