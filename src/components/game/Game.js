@@ -6,7 +6,7 @@ import { newGame } from '../actions/';
 const gridStyle = size => ({
   display: 'grid',
   gridGap: '1rem',
-  gridTemplateColumns: `repeat(${Math.ceil(Math.sqrt(size))}, auto)`
+  gridTemplateColumns: `repeat(3, auto)`
 });
 
 const getCards = cards => cards
@@ -36,9 +36,7 @@ const Game = ({ cards, currentTries, best, dispatch }) => {
   return (
     <div className="Game">
       <div className="scoreContainer">
-        <p>{`Current tries: ${currentTries}`}</p>
-        <p>{`Best: ${best}`}</p>
-        <button onClick={restart(dispatch, cards.length / 2)}>RESTART</button>
+        {/* <p>{`Current tries: ${currentTries}`}</p> */}
       </div>
       <div style={gridStyle(cards.length)}>
         {getCards(cards)}

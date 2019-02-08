@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 import './Card.css';
 
 const getStyle = background => ({
-  width: 120,
-  height: 120,
+  width: 90,
+  height: 90,
   borderRadius: '0.5rem',
   boxShadow: '4px 6px 33px 1px rgba(181,181,181,1)',
   background,
