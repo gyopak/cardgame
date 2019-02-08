@@ -1,23 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "939001b84cc71e82e856",
-    "url": "/cardgame/static/css/main.96a39466.chunk.css"
+    "revision": "b15739dfffd49be2dfdb",
+    "url": "/cardgame/static/css/main.9df86a73.chunk.css"
   },
   {
-    "revision": "939001b84cc71e82e856",
-    "url": "/cardgame/static/js/main.939001b8.chunk.js"
+    "revision": "b15739dfffd49be2dfdb",
+    "url": "/cardgame/static/js/main.b15739df.chunk.js"
   },
   {
-    "revision": "feb4383ae2578fa8eb81",
-    "url": "/cardgame/static/js/1.feb4383a.chunk.js"
+    "revision": "2cf75ff34f4205948ae2",
+    "url": "/cardgame/static/js/1.2cf75ff3.chunk.js"
   },
   {
     "revision": "4de7129ab9e660fa79bd",
     "url": "/cardgame/static/js/runtime~main.4de7129a.js"
-  },
-  {
-    "revision": "0a42ff00dc6f5191b741c7e0e3b696f3",
-    "url": "/cardgame/static/media/logo.0a42ff00.svg"
   },
   {
     "revision": "ef1abca23914d7c222032beebdd5a8b7",
@@ -56,7 +52,7 @@ self.__precacheManifest = [
     "url": "/cardgame/static/media/ts.c237b6ce.png"
   },
   {
-    "revision": "fb177347b3ce2958ca05d9ed6c963aa9",
+    "revision": "4963561c6968c04b422e1acbdeb63fd8",
     "url": "/cardgame/index.html"
   }
 ];
