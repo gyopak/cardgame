@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and deployed [here](https://gy0p4k.github.io/cardgame/).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and deployed [here](https://gyopak.github.io/cardgame/).
 
 ## Features
 
